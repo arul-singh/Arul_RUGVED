@@ -1,24 +1,22 @@
 #Write a program to print the Fibonacci Sequence till n-values where n is user input.
 
-text = input(str("Enter a text: "))
-shift = int(input("Enter the shift: "))
+from functools import cache
 
+n = int(input("Enter the number: ").strip())
 
-def Encrypt(text):
-    text = list(text)
+@cache
+def fibonacci(num):
     
-    for i in range(len(text)):
-        text[i]= chr(ord(text[i])+shift)
-        if text[i]==" ":
-            continue
-        i += 1
-        
-    encrypted_text = [x if x != "#" else " " for x in text]
+    if num ==0:
+        return 0
+    if num ==1:
+        return 1
     
-    encrypted_text = "".join(encrypted_text)
-    
-    return "".join(encrypted_text)
+    return fibonacci(num-1) + fibonacci(num-2)
 
+seq = []
 
-print(Encrypt(text))
+for i in range(int(n)+1):
+    seq.append(fibonacci(i))
 
+print(seq)

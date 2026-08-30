@@ -1,4 +1,5 @@
-#python program to check if given number is a hill number 
+#3. Write a python program to check if given number is a hill number
+
 number_to_check = input("Enter a number: ")
 
 def is_hill_number(number):

@@ -1,7 +1,7 @@
 #2. Write a python program to sort a string alphabetically and print the count of each character.
 
 
-text = "Hello World"
+text = str(input("Enter a text: "))
 
 sorted_text = "".join(sorted(list("".join(text.lower().split()))))
 

@@ -1,8 +1,8 @@
-#perform selection sort on a given string
+#4. Write a python function to perform selection sort on a given string.
 
-def selection_sort(text):
+text = str(input("Enter the text: "))
+
+def selection_sort(text: str):
+    return "".join(sorted(list("".join(text.lower().split()))))
     
-    text = sorted(text.lower())
-    text = "".join(text)
-    return text
-    
+print(selection_sort(text))
