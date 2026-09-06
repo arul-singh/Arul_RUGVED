@@ -1,3 +1,5 @@
+#14. Find the total number of matches played in each season.
+
 import pandas as pd
 
 df = pd.read_csv('matches.csv')
