@@ -1,5 +1,7 @@
 from math import *
 
+number = input("Enter the number")
+
 def isValid(num):
     
     num = list(str(num))
@@ -25,7 +27,7 @@ def isValid(num):
     else:
         return False
  
-
+print(isValid(number))
     
 
 
