@@ -1,15 +1,15 @@
-from math import *
+#10. Write a python function to check if a given credit card number is valid or not using Luhn’s Algorithm
 
-number = input("Enter the number")
+number = input("Enter the number: ")
 
-def isValid(num):
+def isvalid(num):
     
     num = list(str(num))
     num.reverse()
     
     def specific_doubler(sd):
         sd = list(str(sd))
-        return (int(sd[0])+int(sd[1]))
+        return int(sd[0])+int(sd[1])
     
     i= 1
     for i in range(1, len(num), 2):

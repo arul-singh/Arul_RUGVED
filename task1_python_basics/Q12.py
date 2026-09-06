@@ -1,3 +1,6 @@
+#12. WAP a code to print the following patters.
+
+
 n=5
 for i in range(n+1):
     print(((n-i)*" ")+ (i*"* "))

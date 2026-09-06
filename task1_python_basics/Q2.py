@@ -1,4 +1,4 @@
-#2. Write a python program to sort a string alphabetically and print the count of each character.
+#2.  Write a python program to sort a string alphabetically and print the count of each character.
 
 
 text = str(input("Enter a text: "))

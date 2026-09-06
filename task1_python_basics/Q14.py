@@ -1,4 +1,4 @@
-#14. Given an array arr[], find the first repeating element. The element should occur more than once and the index of its first occurrence should be the smallest.
+#14.  Given an array arr[], find the first repeating element. The element should occur more than once and the index of its first occurrence should be the smallest.
 
 arr = str(input("Enter the array with elements separated by space: "))
 arr = list("".join(arr.split()))

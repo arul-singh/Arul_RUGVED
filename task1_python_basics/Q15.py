@@ -1,6 +1,6 @@
+#15. Rotate an n*n matrix by 90° clockwise.Take a user input for a matrix and print the elements in spiral order
+
 import numpy as np
-
-
 
 order =int(input("Enter the order of matrix: "))
 

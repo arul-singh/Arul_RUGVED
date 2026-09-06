@@ -1,4 +1,4 @@
-#4. Write a python function to perform selection sort on a given string.
+#4.  Write a python function to perform selection sort on a given string.
 
 text = str(input("Enter the text: "))
 

@@ -1,4 +1,4 @@
-#5. Find the fibonacci of a given number using recursion.
+#5.  Find the fibonacci of a given number using recursion.
 
 #i optimisde it using @cache 
 from functools import cache

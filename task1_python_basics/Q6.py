@@ -1,4 +1,4 @@
-#6. Create a function that takes two strings as input and checks whether they are anagrams of each other.
+#6.  Create a function that takes two strings as input and checks whether they are anagrams of each other.
 
 
 word1 = str(input("Enter first word: "))
