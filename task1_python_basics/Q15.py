@@ -1,12 +1,21 @@
 import numpy as np
 
-matrix = np.array([
-    
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-])
-print(matrix)
-print(np.rot90(matrix, k=3))
 
-#left to figure out spiral traversal
+
+order =int(input("Enter the order of matrix: "))
+
+matrix = []
+print("Enter the elements with space between the elements")
+for i in range(order):
+    row = input(f"for Row {i}: ")
+    row = row.split()
+    row = [int(x) for x in row]
+    matrix.append(row)
+
+matrix = np.array(matrix)
+
+rotated = np.rot90(matrix, k=3)
+print(rotated)
+
+#will do spiral traversal later
+
