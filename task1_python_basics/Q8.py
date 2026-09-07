@@ -5,13 +5,20 @@ n = int(input("Enter the division length: "))
 
 divided_list = []
 
-if len(string)%n != 0:
-    print("division is not possible")
+if n <= 0:
+    print("Error: n must be greater than 0.")
+
+elif len(string) % n != 0:
+    print(f"Error: Division is not possible. Length of string {len(string)} is not divisible by {n}.")
+
+else:
+    string = "".join(string.split())
+
+    text = []
+    for i in range(int((len(string))/n)):
+        text.append(string[i*n:(i+1)*n])
+
+    print(text)
 
 
-for i in string:
-    divided_list.append(string[i*n:(i+1)*n])
-    i+=1
-    
 
-print(divided_list)
