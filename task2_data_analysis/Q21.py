@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv('matches.csv')
+df = pd.read_csv('matches.csv', usecols=['winner'])
 
 labels = list(df['winner'].value_counts().to_dict().keys())
 values = list(df['winner'].value_counts().to_dict().values())
@@ -13,7 +13,7 @@ values = list(df['winner'].value_counts().to_dict().values())
 fig, ax  = plt.subplots(figsize=(10, 12))
 
 
-bars = ax.bar(labels, values,  color='orange', edgecolor = 'black')
+bars = ax.bar(labels, values,  color='orange', edgecolor = 'black', linewidth = 2)
 
 ax.bar_label(bars, fontsize = 10)
 ax.set_xlabel('Teams', fontsize = 15, fontweight="bold")

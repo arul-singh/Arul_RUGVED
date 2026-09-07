@@ -9,8 +9,10 @@ df = pd.read_csv('matches.csv')
 
 data = pd.crosstab(df["toss_winner"], df["toss_decision"])
 
-data.plot(kind="bar", figsize=(10, 12), color=["green", "red"], width=0.8)
+ax = data.plot(kind="bar", figsize=(10, 12), color=["green", "red"], width=0.8, edgecolor = 'black', linewidth = 2)
 
+plt.bar_label(ax.containers[0])
+plt.bar_label(ax.containers[1])
 plt.title("Toss Outcomes", fontsize=20, fontweight="bold")
 plt.xlabel("Teams", fontsize=14, fontweight = 'bold')
 plt.ylabel("Number of Matches", fontsize=15, fontweight = 'bold')
