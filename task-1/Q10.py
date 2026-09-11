@@ -27,7 +27,7 @@ def isvalid(num):
     else:
         return False
  
-print(isValid(number))
+print(isvalid(number))
     
 
 

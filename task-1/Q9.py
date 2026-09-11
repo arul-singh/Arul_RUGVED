@@ -4,7 +4,7 @@ text = str(input("Enter the text to be encrypted: "))
 shift = int(input("Enter the shift: "))
 
 arr = list(text)
-print(arr)
+
 
 for i in range(len(arr)):
 

@@ -16,7 +16,7 @@ def fibonacci(num):
 
 seq = []
 
-for i in range(int(n)+1):
+for i in range(int(n)):
     seq.append(fibonacci(i))
 
 print(seq)
